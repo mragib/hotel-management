@@ -1,0 +1,26 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoicmFnaWIiLCJ1c2VySWQiOjF9LCJpYXQiOjE3MTgwOTQ3NzEsImV4cCI6MTcxODA5NDgwMX0.NSL4SbOmWB-A1u9nvyVW7MbWExo5zi888r3WraH4Fvw
+### Sign in a Admin ####
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+    "username":"ragib",
+    "password": "Ragib@06#"
+}
+
+### Get all Users ###
+GET http://localhost:8000/api/users
+Authorization:Bearer {{token}}
+
+### Block a user ###
+PATCH http://localhost:3000/users/block/5
+Content-Type: application/json
+Authorization:Bearer {{token}}
+
+{
+    "isBlocked":true
+}
+
+### Delete a user ###
+DELETE http://localhost:3000/users/6
+Authorization:Bearer {{token}}

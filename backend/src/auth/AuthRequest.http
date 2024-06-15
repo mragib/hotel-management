@@ -1,0 +1,29 @@
+@token =eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoicmFnaWIiLCJ1c2VySWQiOjF9LCJpYXQiOjE3MTgwODg3OTUsImV4cCI6MTcxODA4ODgyNX0.zFDzcxtVvfOdrO4OshFUTHU1sqeJshUetmmcu64NIko
+
+### Sign Up a User ####
+POST http://localhost:8000/api/signup
+Content-Type: application/json
+
+{
+    "first_name": "Md Ragib",
+    "last_name": "Shahriar",
+    "email":"diner.ragib@gmail.com",
+    "password": "Ragib@06#",
+    "phone": "01714906170",
+    "address": "Savar, Dhaka",
+    "username":"ragib"
+}
+
+### Sign in a User ####
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+    "email":"diner.ragib@gmail.com",
+    "username":"ragib",
+    "password": "Ragib@06#"
+}
+
+### get the auth user ###
+GET http://localhost:8000/api/auth-user
+Authorization:Bearer {{token}}

@@ -1,0 +1,2 @@
+### Get all guest ###
+GET http://localhost:8000/api/guest
