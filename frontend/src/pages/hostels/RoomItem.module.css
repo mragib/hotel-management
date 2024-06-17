@@ -1,0 +1,30 @@
+.room {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+.room img {
+  border-radius: 1rem;
+}
+.room p {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.details button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 48em) {
+  .room {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 26em) {
+  .room {
+    flex-direction: column;
+  }
+}

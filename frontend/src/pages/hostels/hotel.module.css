@@ -1,0 +1,20 @@
+.hotel {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem 3rem;
+  justify-content: flex-start;
+}
+
+.hotel img {
+  width: 15rem;
+}
+
+.hotel_details {
+  padding: 0;
+}
+
+@media (max-width: 48em) {
+  .hotel {
+    flex-direction: column;
+  }
+}

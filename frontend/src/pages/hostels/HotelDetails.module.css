@@ -1,0 +1,15 @@
+.hotelContainer {
+  background-color: #f2f2f2;
+}
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 0;
+}
+.image {
+  text-align: center;
+  width: 35%;
+}

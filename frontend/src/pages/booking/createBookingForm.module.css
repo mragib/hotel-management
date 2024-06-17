@@ -1,0 +1,9 @@
+.form_control {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.form_control p {
+  padding: 0.5rem 1rem;
+  color: brown;
+}
