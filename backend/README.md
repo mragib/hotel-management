@@ -17,4 +17,8 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+# Swagger Documentions
+
+http://localhost/api
+
 This backend is for admin who will login to the system and manage rooms, bookings and guest.
